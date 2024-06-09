@@ -4,15 +4,11 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -21,8 +17,11 @@ body {
   padding: 1rem;
 }
 
-h1 {
-  font-size: 150%;
+h1 { font-size: 150%; }
+h2 { font-size: 130%; }
+h3 { font-size: 120%; }
+h4 { font-size: 110%; }
+h1, h2, h3, h4 {
   font-weight: bold;
 }
 
