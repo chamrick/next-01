@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './UsersTable.module.scss';
 
 interface User {
   id: number;
@@ -17,7 +18,7 @@ const UsersPage = async () => {
     <>
       <h1>Users</h1>
       <p>{(new Date).toLocaleTimeString()}</p>
-      <table>
+      <table className={styles.usersTable}>
         <thead>
           <tr>
             <th>ID</th>

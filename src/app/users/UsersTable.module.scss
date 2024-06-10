@@ -1,0 +1,13 @@
+.usersTable {
+  border: 1px solid green;
+  border-collapse: separate;
+  border-spacing: 4px;
+  background-color: #AEB;
+}
+
+.usersTable th,
+.usersTable td {
+  border: 1px solid green;
+  background-color: #EEE;
+  padding: 2px 5px;
+}
