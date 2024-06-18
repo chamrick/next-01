@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { Button } from './Button';
-import './header.css';
+import { Button } from '../app/components/Button/Button';
+import './AlternateHeader.css';
 
 type User = {
   name: string;
 };
 
-interface HeaderProps {
+interface AlternateHeaderProps {
   user?: User;
   onLogin?: () => void;
   onLogout?: () => void;
   onCreateAccount?: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+export const AlternateHeader = ({ user, onLogin, onLogout, onCreateAccount }: AlternateHeaderProps) => (
   <header>
     <div className="storybook-header">
       <div>

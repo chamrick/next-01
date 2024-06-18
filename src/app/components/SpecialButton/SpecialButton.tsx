@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@/stories/Button';
+import { Button } from '@/app/components/Button/Button';
 
 type SpecialButtonProps = {
   label: string;
