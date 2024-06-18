@@ -1,7 +1,6 @@
 .navWrap {
   display: inline-block;
   padding-top: 10px;
-
 }
 
 .navList {
@@ -14,5 +13,22 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 919px) {
+  .navList {
+    display: flex;
+    position: relative;
+    top: -10px;
+  }
+
+  .navList li {
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-right: 30px;
+  }
 }

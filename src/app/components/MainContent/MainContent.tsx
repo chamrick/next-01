@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './MainContent.module.scss';
 
 export default function MainContent({
   children,
@@ -6,6 +7,8 @@ export default function MainContent({
   children: React.ReactNode;
 }>) {
   return (
-    <main>{children}</main>
+    <main className={styles.mainContent}>
+      {children}
+    </main>
   );
 }

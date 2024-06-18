@@ -6,8 +6,10 @@ import styles from './MainHeader.module.css';
 const MainHeader = () => {
   return (
     <header className={styles.mainHeader}>
-      <SiteLogo />
-      <MainNavbar />
+      <div className={styles.headerContent}>
+        <SiteLogo />
+        <MainNavbar />
+      </div>
     </header>
   );
 };
