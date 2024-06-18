@@ -2,12 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import styles from './AlbumsDisplay.module.scss';
 import SpecialButton from '../SpecialButton/SpecialButton';
+import generateRandom from '../../lib/generateRandom';
 
 type Album = {
   id: number;
   userId: number;
   title: string;
 };
+
+const randNum = generateRandom(4, 9);
 
 const AlbumsDisplay = () => {
   const initialAlbums: Album[] = [];
@@ -33,7 +36,8 @@ const AlbumsDisplay = () => {
     };
   }, [albumsData, isLoading, isError]);
 
-  const buttonLabel = (albumsData.length && !isError) ? `${albumsData.length} Albums` : 'No Albums Loaded';
+  
+  const buttonLabel = (albumsData.length && !isError) ? `${(albumsData.length + randNum)} Albums` : 'No Albums Loaded';
 
   return (
     <>
