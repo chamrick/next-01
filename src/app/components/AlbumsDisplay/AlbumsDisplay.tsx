@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import styles from './AlbumsDisplay.module.scss';
+import SpecialButton from '../SpecialButton/SpecialButton';
 
 type Album = {
   id: number;
@@ -32,8 +33,12 @@ const AlbumsDisplay = () => {
     };
   }, [albumsData, isLoading, isError]);
 
+  const buttonLabel = (albumsData.length && !isError) ? `${albumsData.length} Albums` : 'No Albums Loaded';
+
   return (
     <>
+    <SpecialButton label={buttonLabel} />
+    <br /><br />
     { isLoading ? <div>Loading...</div> : (
       isError ? <div>Error loading albums data!</div> : (
         <table className={styles.albumsTable}>
