@@ -1,0 +1,15 @@
+.sitenameWithLogo {
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logoImage {
+  float: left;
+}
+
+.siteName {
+  display: inline-block;
+  padding: 3px 20px 0 10px;
+}

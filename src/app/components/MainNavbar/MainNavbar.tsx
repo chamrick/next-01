@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './MainNavbar.module.css';
 
 const MainNavbar = () => {
   return (
-    <nav>
-      <ul>
+    <nav className={styles.navWrap}>
+      <ul className={styles.navList}>
         <li><a href="/">Home</a></li>
         <li><a href="/albums">Albums</a></li>
         <li><a href="/posts">Posts</a></li>

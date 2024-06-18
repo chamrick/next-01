@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+
   --foreground-rgb: 0, 0, 0;
 }
 
@@ -12,9 +13,14 @@
   }
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  background-image: linear-gradient(rgb(80, 110, 180), rgb(80, 120, 110));
 }
 
 h1 { font-size: 150%; }
@@ -29,8 +35,4 @@ h1, h2, h3, h4 {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.LayoutWrap {
-  background-color: yellow;
 }

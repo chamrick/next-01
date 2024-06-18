@@ -24,11 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="winter">
       <body className={inter.className}>
-        <div className="LayoutWrap">
-          <MainHeader />
-          <MainContent children={children} />
-          <MainFooter />
-        </div>
+        <MainHeader />
+        <MainContent children={children} />
+        <MainFooter />
       </body>
     </html>
   );
