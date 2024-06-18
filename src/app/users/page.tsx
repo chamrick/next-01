@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from "next";
 import styles from './UsersTable.module.scss';
 
 interface User {
@@ -7,7 +8,12 @@ interface User {
   email: string;
 }
 
-const UsersPage = async () => {
+
+export const metadata: Metadata = {
+  title: "Users",
+};
+
+export const UsersPage = async () => {
   const usersApiResponse = await fetch(
     'https://jsonplaceholder.typicode.com/users',
     { cache: 'no-store' },
