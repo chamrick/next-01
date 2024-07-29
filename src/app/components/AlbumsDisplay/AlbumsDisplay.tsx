@@ -28,14 +28,14 @@ const AlbumsDisplay = () => {
     })
     .catch((err) => {
       setIsError(true);
+      setIsLoading(false);
       console.log(err);
     });
 
     return () => {
       console.log('Finished!');
     };
-  }, [albumsData, isLoading, isError]);
-
+  }, []);
   
   const buttonLabel = (albumsData.length && !isError) ? `${(albumsData.length + randNum)} Albums` : 'No Albums Loaded';
 
